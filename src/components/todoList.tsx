@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { Todo } from "@/lib/drizzle";
+
 const getData = async () => {
   try {
     const res = await axios.get("http://localhost:3000/api/todo");
@@ -14,15 +15,15 @@ const getData = async () => {
   }
 };
 
-export default async function TodoList() {
+export default async function TodoList():Promise<JSX.Element> {
   const todos:Todo[] = await getData();
   return (
-    <div>
+    <div className="max-h-[300px] overflow-auto mb-4">
       {todos.map((todo: { id: number; task: string }) => {
         return (
           <div
             key={todo.id}
-            className="bg-gray-100 py-4 px-4 flex items-center shadow rounded-lg gap-x-3"
+            className="bg-gray-100 py-4 px-4 flex items-center shadow rounded-lg gap-x-3 my-4 mx-5"
           >
             <div className="h-3 w-3 rounded-full bg-secondary" />
             <p className="text-lg font-medium">{todo.task}</p>

@@ -4,7 +4,7 @@ import { Todo } from "@/lib/drizzle";
 
 const getData = async () => {
   try {
-    const res = await axios.get("http://localhost:3000/api/todo");
+    const res = await axios.get("https://todo-appp-faranbutt.vercel.app/api/todo");
     if (!res.data) {
       throw new Error("Something went wrong");
     } else {

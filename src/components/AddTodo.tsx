@@ -12,7 +12,7 @@ export default function AddTodo() {
 
         try{
             if(task){
-               const res =  await axios.post('/api/todo',{
+               const res =  await axios.post('https://todo-appp-faranbutt.vercel.app/api/todo',{
                 task:task.task
             })
             setTask(null);

@@ -1,9 +1,9 @@
 ## Panverse Website Template 👨‍💻
 * A Todo app made with state of the art technologies like Nextjs and Drizzle-ORM
-
+* Front and Backend both are implemented using Next.js Framework.
 ## Technologies used:
 * Frontend ===:> NextJS & Tailwind CSS
-* Backend ===:> Drizzle-ORM, NeonDB & Vercel
+* Backend ===:> Next.js, Drizzle-ORM, NeonDB & Vercel
 
 ## Key Features:
 * Optimized and Fast 🚀
